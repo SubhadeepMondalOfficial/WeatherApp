@@ -44,6 +44,7 @@ function switchTab(clickedTab){
             loaderContainer.classList.add('active')
             getFromSessionStorage()
             loaderContainer.classList.remove('active')
+            notFoundContainer.classList.remove('active')
             showPosition()
         }
         // else{
