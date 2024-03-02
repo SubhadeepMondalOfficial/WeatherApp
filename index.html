@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <h1>WEATHER APP</h1>
+
+      <div id="switch-bar-container">
+        <button id="your-weather-btn">Your Weather</button>
+        <button id="search-weather-btn">Search Weather</button>
+      </div>
+
+        <!--==========================
+            SEARCH WEATHER SECTION
+        ==============================-->
+            <!------------------------
+                    Search by City
+            --------------------------->
+            <form id="search-container">
+              <input type="text" id="search-input" placeholder="Search for City..." />
+              <button>
+              <img src="/images/icon/search_icon.png" alt="" />
+              </button>
+          </form>
+
+
+      <!--==========================
+                LOADER
+        ==============================-->
+      <div id="loader-container">
+        <img src="./images/gif/loader_animation.gif" alt="loader" />
+      </div>
+
+
+      <!--==========================
+            GRAND  LOCATION ACCESS
+        ==============================-->
+      <div id="grand-location-container">
+        <img src="/images/location.png" alt="" />
+        <p id="grand-location-text">Grand Location Access</p>
+        <p>Allow Access To Get Weather Information</p>
+        <button id="grand-location-btn">GRAND ACCESS</button>
+      </div>
+
+
+      <!--================================
+            Temp. According to City / User
+        ==================================-->
+      
+        <div id="data-temp-details-container">
+          <div id="data-city-container">
+            <span id="data-city-name"></span>
+            <img src="" alt="" id="data-country-icon" width="40px" height="30px"/>
+          </div>
+
+          <p id="data-weather-descript"></p>
+          <img src="" alt="" id="data-weather-icon" />
+          <p id="data-temperature">°C</p>
+
+          <!-- .................................
+                    Cards of Winds, Humidity & Clouds
+            ........................................-->
+
+          <div id="data-card-container">
+            <div id="data-card-1">
+              <img src="/images/icon/windspeed_icon.png" alt="Windspeed Icon" />
+              <p>WINDSPEED</p>
+              <p id="data-windspeed">m/s</p>
+            </div>
+            <div id="data-card-2">
+              <img src="/images/icon/humidity_icon.png" alt="Humidity Icon" />
+              <p>HUMIDITY</p>
+              <p id="data-humidity">%</p>
+            </div>
+            <div id="data-card-3">
+              <img src="./images/icon/cloud_icon.png" alt="Cloud Icon" />
+              <p>CLOUDS</p>
+              <p id="data-clouds">%</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!--================================
+            OOPS!! City Not Found
+        ==================================-->
+          <div id="not-found-container">
+            <img src="./images/oops_img.png" alt="">
+            <p>City Not Found</p>
+          </div>
+
+    </main>
+    
+  <!--================================
+            Deveoper Credit
+    ==================================-->
+    <p id="developer-credit">&#169; Design & Developed by <a href="https://github.com/subhadeepMondalOfficial/" target="_blank">@SubhaDeep</a></p>
+
+    <!-- ======================
+        Linking External Files
+    ===========================-->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="javascript/index.js"></script>
+  </body>
+</html>
